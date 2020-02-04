@@ -1,0 +1,21 @@
+// swagger
+export const GET_SWAGGERS = 'GET_SWAGGERS';
+export const ADD_SWAGGER = 'ADD_SWAGGER';
+export const DELETE_SWAGGER = 'DELETE_SWAGGER';
+export const UPDATE_SWAGGER = 'UPDATE_SWAGGER';
+export const SET_CURRENT_SWAGGER = 'SET_CURRENT_SWAGGER';
+export const CLEAR_CURRENT_SWAGGER = 'CLEAR_CURRENT';
+export const SWAGGER_ERROR = 'SWAGGER_ERROR';
+export const CLEAR_SWAGGERS = 'CLEAR_SWAGGERS';
+export const CLEAR_SWAGGER_ERRORS = 'CLEAR_SWAGGER_ERRORS';
+export const SHARE_SWAGGER = 'SHARE_SWAGGER';
+
+// auth
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const REGISTER_FAIL = 'REGISTER_FAIL';
+export const USER_LOADED = 'USER_LOADED';
+export const AUTH_ERROR = 'AUTH_ERROR';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGOUT = 'LOGOUT';
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';

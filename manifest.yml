@@ -1,0 +1,6 @@
+---
+applications:
+  - name: api-designer-app
+    memory: 1024M
+    instances: 1
+    command: npm install --prefix client && npm run build --prefix client && node server.js
