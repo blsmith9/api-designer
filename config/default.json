@@ -1,4 +1,4 @@
 {
-	"mongoURI": "mongodb+srv://blsmith9:Crimsontide1@swaggerbuilder-wtpnv.mongodb.net/test?retryWrites=true&w=majority",
+	"mongoURI": "ADD_YOUR_DEV_MONGO",
 	"jwtSecret": "SuperSecretJWTSecretOfSecretsSecretly"
 }
