@@ -134,6 +134,26 @@ const SwaggerItem = ({ swagger }) => {
 											$ref: defPath + p.paramSchema.paramRef
 										};
 									}
+								} else if (p.parameterType === 'date') {
+									if (version === '3.0.0') {
+										newParam.schema = {
+											type: 'string',
+											format: 'date'
+										};
+									} else {
+										newParam.type = 'string';
+										newParam.format = 'date';
+									}
+								} else if (p.parameterType === 'decimal') {
+									if (version === '3.0.0') {
+										newParam.schema = {
+											type: 'number',
+											format: 'float'
+										};
+									} else {
+										newParam.type = 'number';
+										newParam.format = 'float';
+									}
 								} else {
 									if (version === '3.0.0') {
 										newParam.schema = {
@@ -210,6 +230,12 @@ const SwaggerItem = ({ swagger }) => {
 							};
 						} else if (prop.propertyType === 'reference') {
 							newProp.$ref = '#/definitions/' + prop.childSchema.childRef;
+						} else if (prop.propertyType === 'date') {
+							newProp.type = 'string';
+							newProp.format = 'date';
+						} else if (prop.propertyType === 'decimal') {
+							newProp.type = 'number';
+							newProp.format = 'float';
 						} else {
 							newProp.type = prop.propertyType;
 						}

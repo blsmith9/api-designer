@@ -476,7 +476,7 @@ const PathForm = ({
 								className='white-text right'
 								onClick={() => onDeleteVar(varItem.tempId)}
 							>
-								<i className='material-icons'>delete</i>
+								<i className='material-icons'>clear</i>
 							</a>
 							<a
 								href='#!'
@@ -642,7 +642,7 @@ const PathForm = ({
 											className='white-text right'
 											onClick={() => onDeleteParam(paramItem.tempId)}
 										>
-											<i className='material-icons'>delete</i>
+											<i className='material-icons'>clear</i>
 										</a>
 										<a
 											href='#!'
@@ -724,8 +724,10 @@ const PathForm = ({
 									<option value='' disabled>
 										Parameter Type
 									</option>
-									<option value='string'>Text</option>
-									<option value='integer'>Number</option>
+									<option value='string'>String</option>
+									<option value='integer'>Integer</option>
+									<option value='decimal'>Decimal</option>
+									<option value='date'>Date</option>
 									<option value='array'>List</option>
 									<option value='reference'>Definition</option>
 								</select>
@@ -746,8 +748,10 @@ const PathForm = ({
 									<option value='' disabled>
 										Item Type
 									</option>
-									<option value='string'>Text</option>
-									<option value='integer'>Number</option>
+									<option value='string'>String</option>
+									<option value='integer'>Integer</option>
+									<option value='decimal'>Decimal</option>
+									<option value='date'>Date</option>
 								</select>
 								<label
 									style={{ marginTop: '10px' }}
@@ -806,7 +810,7 @@ const PathForm = ({
 											className='white-text right'
 											onClick={() => onDeleteResp(respItem.tempId)}
 										>
-											<i className='material-icons'>delete</i>
+											<i className='material-icons'>clear</i>
 										</a>
 										<a
 											href='#!'

@@ -216,7 +216,7 @@ const DefinitionForm = ({
 								className='white-text right'
 								onClick={() => onDeleteProperty(propItem.tempId)}
 							>
-								<i className='material-icons'>delete</i>
+								<i className='material-icons'>clear</i>
 							</a>
 							<a
 								href='#!'
@@ -250,8 +250,10 @@ const DefinitionForm = ({
 						<option value='' disabled>
 							Property Type
 						</option>
-						<option value='string'>Text</option>
-						<option value='integer'>Number</option>
+						<option value='string'>String</option>
+						<option value='integer'>Integer</option>
+						<option value='decimal'>Decimal</option>
+						<option value='date'>Date</option>
 						<option value='array'>List</option>
 						<option value='reference'>Definition</option>
 					</select>
@@ -272,8 +274,10 @@ const DefinitionForm = ({
 						<option value='' disabled>
 							Item Type
 						</option>
-						<option value='string'>Text</option>
-						<option value='integer'>Number</option>
+						<option value='string'>String</option>
+						<option value='integer'>Integer</option>
+						<option value='decimal'>Decimal</option>
+						<option value='date'>Date</option>
 						<option value='reference'>Definition</option>
 					</select>
 					<label
